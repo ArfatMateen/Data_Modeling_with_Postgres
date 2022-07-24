@@ -11,56 +11,56 @@ time_table_drop = "DROP TABLE IF EXISTS time;"
 songplay_table_create = ("""
 CREATE TABLE IF NOT EXISTS songplays (
     songplay_id SERIAL PRIMARY KEY,
-    start_time timestamp NOT NULL,
-    user_id int NOT NULL,
-    level varchar,
-    song_id varchar,
-    artist_id varchar,
-    session_id int,
-    location varchar,
-    user_agent varchar
+    start_time TIMESTAMP NOT NULL,
+    user_id INT NOT NULL,
+    level VARCHAR,
+    song_id VARCHAR,
+    artist_id VARCHAR,
+    session_id INT,
+    location VARCHAR,
+    user_agent VARCHAR
 );
 """)
 
 user_table_create = ("""
 CREATE TABLE IF NOT EXISTS users (
-    user_id int PRIMARY KEY,
-    first_name varchar,
-    last_name varchar,
-    gender char(1),
-    level varchar
+    user_id INT PRIMARY KEY,
+    first_name VARCHAR,
+    last_name VARCHAR,
+    gender CHAR(1),
+    level VARCHAR
 );
 """)
 
 song_table_create = ("""
 CREATE TABLE IF NOT EXISTS songs (
-    song_id varchar PRIMARY KEY,
-    title varchar NOT NULL,
-    artist_id varchar,
-    year int,
-    duration numeric NOT NULL
+    song_id VARCHAR PRIMARY KEY,
+    title VARCHAR NOT NULL,
+    artist_id VARCHAR,
+    year INT,
+    duration NUMERIC NOT NULL
 );
 """)
 
 artist_table_create = ("""
 CREATE TABLE IF NOT EXISTS artists (
-    artist_id varchar PRIMARY KEY,
-    name varchar NOT NULL,
-    location varchar,
-    latitude double precision,
-    longitude double precision
+    artist_id VARCHAR PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    location VARCHAR,
+    latitude DOUBLE PRECISION,
+    longitude DOUBLE PRECISION
 );
 """)
 
 time_table_create = ("""
 CREATE TABLE IF NOT EXISTS time (
-    start_time timestamp,
-    hour int,
-    day int,
-    week int,
-    month int,
-    year int,
-    weekday int
+    start_time TIMESTAMP PRIMARY KEY,
+    hour INT,
+    day INT,
+    week INT,
+    month INT,
+    year INT,
+    weekday INT
 );
 """)
 
@@ -91,8 +91,8 @@ INSERT INTO users (
     level
 )
 VALUES (%s, %s, %s, %s, %s)
-ON CONFLICT (user_id) 
-DO NOTHING;
+ON CONFLICT(user_id) 
+DO UPDATE SET level = EXCLUDED.level;
 """)
 
 song_table_insert = ("""
@@ -133,6 +133,8 @@ INSERT INTO time (
     weekday
 )
 VALUES (%s, %s, %s, %s, %s, %s, %s)
+ON CONFLICT (start_time) 
+DO NOTHING;
 """)
 
 # FIND SONGS
