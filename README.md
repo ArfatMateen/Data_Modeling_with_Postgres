@@ -159,6 +159,10 @@ Database schema consist five tables with the following fact and dimension tables
 
     5. `time`: timestamps of records in `songplays` broken down into specific units with the following columns start_time, hour, day, week, month, year and weekday.
 
+    <br/>
+
+    ![Sparkifydb ERD][sparkifydb-erd]
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## ETL Pipeline
@@ -217,3 +221,4 @@ The ETL pipeline follows the following procedure:
 [udacity-url]: https://www.udacity.com/
 [song-dataset]: images/song_data.png
 [log-dataset]: images/log_data.png
+[sparkifydb-erd]: images/sparkifydb_erd.png
