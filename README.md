@@ -1,7 +1,6 @@
 <div id="top"></div>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Udacity][udacity-shield]][udacity-url]
 
 <!-- PROJECT HEADER -->
 <br />
@@ -19,6 +18,9 @@
     -----------------------------------------------
     <br />
     <br />
+    Data Engineer for AI Applications Nanodegree
+    <br />
+    Bosch AI Talent Accelerator Scholarship Program
   </p>
 </div>
 
@@ -58,9 +60,9 @@ The startup wants their `logs` and `songs` data to be loaded into a Postgres dat
 
 ### Built With
 
--   [Python](https://www.python.org/)
--   [PostgreSQL](https://www.postgresql.org/)
--   [Jupyter Notebook](https://jupyter.org/)
+-   [![Python][python-shield]][python-url]
+-   [![PostgreSQL][postgresql-shield]][postgresql-url]
+-   [![Jupyter][jupyter-shield]][jupyter-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -216,9 +218,13 @@ The ETL pipeline follows the following procedure:
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[udacity-shield]: https://img.shields.io/badge/Udacity-grey?style=for-the-badge&logo=udacity&logoColor=#5FCFEE
+[python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+[postgresql-shield]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[jupyter-shield]: https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter
 [linkedin-url]: https://www.linkedin.com/in/arfat-mateen
-[udacity-url]: https://www.udacity.com/
+[python-url]: https://www.python.org/
+[postgresql-url]: https://www.postgresql.org/
+[jupyter-url]: https://jupyter.org/
 [song-dataset]: images/song_data.png
 [log-dataset]: images/log_data.png
 [sparkifydb-erd]: images/sparkifydb_erd.png
