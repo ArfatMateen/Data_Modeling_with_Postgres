@@ -1,6 +1,7 @@
 <div id="top"></div>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
+![Generic badge](https://img.shields.io/badge/Project-Pass-green.svg)
 
 <!-- PROJECT HEADER -->
 <br />
@@ -63,6 +64,7 @@ The startup wants their `logs` and `songs` data to be loaded into a Postgres dat
 -   [![Python][python-shield]][python-url]
 -   [![PostgreSQL][postgresql-shield]][postgresql-url]
 -   [![Jupyter][jupyter-shield]][jupyter-url]
+-   [![VSCode][vscode-shield]][vscode-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -217,14 +219,16 @@ The ETL pipeline follows the following procedure:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [postgresql-shield]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
 [jupyter-shield]: https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter
+[vscode-shield]: https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
 [linkedin-url]: https://www.linkedin.com/in/arfat-mateen
 [python-url]: https://www.python.org/
 [postgresql-url]: https://www.postgresql.org/
 [jupyter-url]: https://jupyter.org/
+[vscode-url]: https://code.visualstudio.com/
 [song-dataset]: images/song_data.png
 [log-dataset]: images/log_data.png
 [sparkifydb-erd]: images/sparkifydb_erd.png
