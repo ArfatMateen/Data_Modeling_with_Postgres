@@ -72,7 +72,7 @@ The startup wants their `logs` and `songs` data to be loaded into a Postgres dat
 
 ## File Structure
 
-1. Dataset (Available in data folder):
+1. Dataset available in data folder:
 
     - `Song Dataset`: Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are file paths to two files in this dataset.
 
@@ -116,14 +116,24 @@ The startup wants their `logs` and `songs` data to be loaded into a Postgres dat
 
 ## How To Run
 
+### Prerequisite
+
+-   Prepare the Python environment by typing the following command into the Terminal
+
+    ```
+    $ pip install -r requirements.txt
+    ```
+
+### Running scripts
+
 -   In order to work with the project you first need to run the `create_tables.py` at least once to create the sparkifydb database.
 
 -   You can execute the one of the following command inside a python environment to run the `create_tables.py`
 
     ```
-    python create_tables.py
+    $ python create_tables.py
     or
-    python3 create_tables.py
+    $ python3 create_tables.py
     ```
 
 -   You can only work with `test.ipynb`, `etl.ipynb`, or `etl.py` after running the `create_tables.py`
@@ -133,9 +143,9 @@ The startup wants their `logs` and `songs` data to be loaded into a Postgres dat
 -   You can execute the one of the following command inside a python environment to run the `etl.py`
 
     ```
-    python etl.py
+    $ python etl.py
     or
-    python3 etl.py
+    $ python3 etl.py
     ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
